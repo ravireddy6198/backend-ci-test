@@ -22,20 +22,20 @@ pipeline {
                 }
             }
         }
-        stage('Install Dependencies') {
-            steps {
-                sh 'npm install'
-            }
-        }
-        stage('Docker build') {
+        // stage('Install Dependencies') {
+        //     steps {
+        //         sh 'npm install'
+        //     }
+        // }
+        // stage('Docker build') {
             
-            steps {
+        //     steps {
 
-                    sh """
-                    docker build -t joindevops/backend:${appVersion} .
-                    docker images
-                    """
-            }
+        //             sh """
+        //             docker build -t joindevops/backend:${appVersion} .
+        //             docker images
+        //             """
+        //     }
         }
     }
 
